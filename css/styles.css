@@ -1098,10 +1098,10 @@ a {
     flex-wrap: nowrap;
   }
   .populaires-cards a {
-    width: 90%;
+    width: 100%;
   }
   .rightlinkcard {
-    width: 90%;
+    width: 100%;
   }
   h2 {
     margin-left: 16px;
@@ -1252,6 +1252,7 @@ a {
   .childboxactivities {
     width: auto;
     height: auto;
+    margin-top: 0;
     margin-bottom: 20px;
   }
   .boxcard {

@@ -44,7 +44,7 @@ a {
 .card-hover:hover {
   box-shadow: 0 2px 5px 3px #cbcaca;
 }
-/***Onglets en haut à droite***/
+/***Menu ***/
 header {
   max-width: 1440px;
   width: 100%;
@@ -107,13 +107,9 @@ main {
   height: auto;
   margin-bottom: 10px;
 }
-/*** section1 Recherche et Filtres***/
+/*** Recherche et Filtres***/
 #searchandfiltersection {
   margin: 0 40px 15px 40px;
-}
-#searchbar {
-  display: flex;
-  align-items: center;
 }
 h1 {
   font-size: 22px;
@@ -127,6 +123,12 @@ h1 {
   margin-top: 3px;
   margin-bottom: 20px;
 }
+#searchbar {
+  display: flex;
+  align-items: center;
+}
+
+
 
 /***mise en forme de la barre de recherche***/
 #searchbar {
@@ -195,7 +197,7 @@ form {
   margin-bottom: 30px;
 }
 
-/***Les filters***/
+/***Les Filtres***/
 #filters {
   display: flex;
   align-items: center;
@@ -250,7 +252,7 @@ form {
   font-weight: 900;
 }
 
-/***Les hébergements***/
+/***Les Hébergements***/
 #rentsection {
   margin: 0 40px 0 40px;
 }
@@ -282,8 +284,6 @@ form {
 }
 
 /***Hébergements et populaires***/
-
-
 .hebergements-and-populaires {
   position: relative;
   display: flex;
@@ -366,22 +366,16 @@ h3 {
   font-size: 15px;
   color: #000000;
 }
-.leftstars {
+.leftstarsgroup {
   margin-left: 7px;
   margin-top: 0;
 }
-.leftbluestars {
+.leftstars {
   font-size: 12px;
   padding: 5px;
-  color: var(--main-color);
   width: 2%;
 }
-.leftgraystars {
-  font-size: 12px;
-  padding: 5px;
-  color: var(--main-bg-color);
-    width: 2%;
-}
+
 #linkdisplay {
   transition: all 0.2s ease;
 }
@@ -495,8 +489,6 @@ h3 {
   margin-bottom: 10px;
   margin-left: 15px;
 }
-
-/***box***/
 .childboxactivities {
   width: 23.2%;
   height: 445px;
@@ -582,6 +574,8 @@ a {
 
 /***pour les ordis en-dessous de 1315px***/
 @media screen and (max-width: 1315px) {
+  /***Les Filtres***/
+
   .size1 {
     font-size: 12px;
     top: 50%;
@@ -614,18 +608,22 @@ a {
     font-size: 15px;
     font-weight: 900;
   }
+  /***panneau Hébergements ***/
   .leftrentag {
     font-size: 13px;
   }
   .leftfontcard {
     font-size: 13px;
   }
+   /***Panneau Les plus populaires ***/
   .rightrentag {
     font-size: 13px;
   }
   .rightfontcard {
     font-size: 13px;
   }
+
+  /***Les Activités à Marseille ***/
   .tagactivity {
     font-size: 13px;
   }
@@ -635,6 +633,7 @@ a {
 /* Medium devices (tablets, less/equal than 1024px) */
 
 @media (max-width: 1024px) {
+  /***Les Filtres***/
   .size1 {
     font-size: 10px;
   }
@@ -647,9 +646,11 @@ a {
   .size4 {
     font-size: 11px;
   }
+  /***Hébergements et populaires***/
   h3 {
     font-size: 13px;
   }
+  /***Panneau Les plus populaires ***/
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -684,6 +685,7 @@ a {
     font-size: 13px;
   }
 
+  /***Les Activités à Marseille ***/
   #activitiessection {
     height: auto;
   }
@@ -714,14 +716,11 @@ a {
 
 /*** tablettes SUITE ***/
 @media screen and (max-width: 992px) {
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-  }
+
   .main-container {
     padding: 0;
   }
+  /*** Menu***/
   header {
     width: auto;
     overflow: hidden;
@@ -906,7 +905,7 @@ a {
 
 /**********pour les téléphones mobiles*********/
 @media screen and (max-width: 767.98px) {
-  /***header***/
+ 
 
   html,
   body {
@@ -916,7 +915,8 @@ a {
     padding: 0;
   }
 
-  header {
+ /***Menu***/
+   header {
     flex-direction: column;
     justify-content: center;
     padding: 0;
@@ -969,6 +969,7 @@ a {
   .tabs {
     padding-left: 0;
   }
+
   /***Recherche et filtres***/
   #searchandfiltersection {
     width: auto;
@@ -1035,6 +1036,7 @@ a {
     box-shadow: 1px 1px 2px var(--main-color);
     cursor: grab;
   }
+
   /***Les Filtres***/
   #filterstitle {
     margin-bottom: 20px;
@@ -1138,11 +1140,6 @@ a {
   h2 {
     margin-left: 16px;
   }
-
-  .blackstar {
-    right: -4px;
-  }
-
   .rightcard {
     margin-bottom: 0;
     width: auto;
@@ -1152,9 +1149,7 @@ a {
     border-radius: 18px;
     box-shadow: 1px 1px 12px 3px #f9fbfe;
   }
-  .imgzone {
-    height: 142px;
-  }
+ 
   .rightstylimage {
     margin-bottom: 4px;
     margin-top: 4px;
@@ -1163,38 +1158,10 @@ a {
     height: 142px;
     width: 34%;
   }
-  .textzone {
-    height: 132px;
-    width: 60%;
-    position: relative;
-  }
-  .rightrentag {
-    font-size: 20px;
-    margin-left: 0;
-  }
-  .rightfontcard {
-    font-size: 17px;
-    margin-left: 0;
-  }
-  .rightstars {
-    position: absolute;
-    left: 25px;
-    bottom: -7px;
-    margin-left: 0;
-    padding-left: 0;
-  }
-  .rightbluestars {
-    padding-right: 11px;
-    padding-left: 0;
-    font-size: 13px;
-    color: var(--main-color);
-  }
-  .rightgraystars {
-    padding-right: 6px;
-    padding-left: 0;
-    font-size: 13px;
-    color: rgb(183, 176, 176);
-  }
+  
+
+ 
+
 
   /***Panneau de gauche Les hébergements***/
   #rentsection {
@@ -1235,11 +1202,7 @@ a {
     font-size: 15.7px;
     margin-bottom: 5px;
   }
-  .leftbluestars {
-    padding: 5px;
-    font-size: 12px;
-  }
-  .leftgraystars {
+  .leftstars {
     padding: 5px;
     font-size: 12px;
    
@@ -1247,7 +1210,7 @@ a {
   #display {
     margin: 40px 0 0 0;
   }
-  /***Les activités***/
+  /***Les Activités-à Marseille***/
   #activitiesection {
     width: auto;
     min-width: 100%;
@@ -1271,8 +1234,6 @@ a {
     margin-bottom: 0;
     padding: 10px 0 0 0;
   }
-
-  /***Box ***/
   .childboxactivities .linkbox .boxcard {
     height: 210px;
   }

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="utf-8" >
+    <link rel="stylesheet" href="css/normalize.css" >
+    <link rel="stylesheet" href="css/styles.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,13 +14,13 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
+    >
     <title>Location Vacances de Rêve Booki</title>
     <meta
       name="description"
       content="Trouver des Hébergements et des Activités 
     dans la ville de votre choix adaptés à vos besoins pour des Vacances de Rêve"
-    />
+    >
   </head>
 
   <body>
@@ -31,11 +31,10 @@
       <nav >
       <div id="logo">
         <a id="logolink" href="#">
-          <img id="logo"
-            src="images/logo/Booki.png"
-            
+          <img id="logoimg"
+            src="images/logo/Booki.png" 
             alt="Logo Booki"
-          />
+          >
         </a>
       </div>
       <div id="navtab">
@@ -57,9 +56,9 @@
         <!--mise en forme de la barre de recherche-->
         <form id="searchbar" method="post" action="traitement.php">
           <label for="locationsearch">
-            <a id="locationicon" href="#">
+            <span id="locationicon">
               <i class="fas fa-location-dot fa" style="color: #000000"></i>
-            </a>
+            </span>
           </label>
           <input
             id="locationsearch"
@@ -67,7 +66,7 @@
             name="locationsearch"
             placeholder="Marseille, France"
             disabled
-          />
+          >
           <button id="searchtext">Rechercher</button>
           <div id="buttoncontainer">
             <div id="borderbutton"></div>
@@ -108,7 +107,7 @@
       </section>
 
       <!--Les Hébergements-->
-      <section id="rentsection">
+      <div id="rentsection">
         <span id="marker1"></span>
         <!--info -->
         <div id="info">
@@ -116,7 +115,7 @@
             <span id="symbolinfo" class="fas fa-info"></span>
           </div>
           <p id="note">
-            Plus de 500 logements sont diponibles dans cette ville
+            Plus de 500 logements sont disponibles dans cette ville
           </p>
         </div>
 
@@ -133,8 +132,8 @@
                   <img
                     class="leftstylimage"
                     src="images/hebergements/fred-kleber.jpg"
-                    alt="Hôtel du Port"
-                  />
+                    alt="Image de la chambre d'hôtel montrant un lit de l'Hôtel du Port"
+                  >
                   <h3 class="leftrentag">Hôtel du Port</h3>
                   <p class="leftfontcard">
                     Nuit à partir de 52 <strong>€</strong>
@@ -153,8 +152,8 @@
                   <img
                     class="leftstylimage"
                     src="images/hebergements/febrian-zakaria.jpg"
-                    alt="Hôtel chez Amina"
-                  />
+                    alt="Image de la chambre d'hôtel montrant un lit de l'Hôtel chez Amina"
+                  >
                   <h3 class="leftrentag">Hôtel chez Amina</h3>
                   <p class="leftfontcard">
                     Nuit à partir de 96 <strong>€</strong>
@@ -173,8 +172,8 @@
                   <img
                     class="leftstylimage"
                     src="images/hebergements/reisetopia.jpg"
-                    alt="Hôtel les mouettes"
-                  />
+                    alt="Image de la chambre d'hôtel montrant un lit de l'Hôtel les mouettes"
+                  >
                   <h3 class="leftrentag">Hôtel les mouettes</h3>
                   <p class="leftfontcard">
                     Nuit à partir de 76 <strong>€</strong>
@@ -196,8 +195,8 @@
                   <img
                     class="leftstylimage"
                     src="images/hebergements/annie-spratt.jpg"
-                    alt="Hôtel de la mer"
-                  />
+                    alt="Image de la chambre d'hôtel montrant un lit de l'Hôtel de la mer"
+                  >
                   <h3 class="leftrentag">Hôtel de la mer</h3>
                   <p class="leftfontcard">
                     Nuit à partir de 46 <strong>€</strong>
@@ -216,8 +215,8 @@
                   <img
                     class="leftstylimage"
                     src="images/hebergements/marcus-loke.jpg"
-                    alt="Auberge La Cannebière"
-                  />
+                    alt="Image de la chambre d'hôtel montrant un lit de l'Auberge La Cannebière"
+                  >
                   <h3 class="leftrentag">Auberge La Cannebière</h3>
                   <p class="leftfontcard">
                     Nuit à partir de 25 <strong>€</strong>
@@ -236,8 +235,8 @@
                   <img
                     class="leftstylimage"
                     src="images/hebergements/nicate-lee.jpg"
-                    alt="Auberge Le Panier"
-                  />
+                    alt="Image de la chambre d'hôtel montrant un lit de l'Auberge Le Panier"
+                  >
                   <h3 class="leftrentag">Auberge Le Panier</h3>
                   <p class="leftfontcard">
                     Nuit à partir de 23 <strong>€</strong>
@@ -324,7 +323,7 @@
             </div>
         </section>
         </div>
-      </section>
+      </div>
 
       <!--Les Activités-à Marseille-->
       <section id="activitiesection">
@@ -338,7 +337,7 @@
                   class="stylimagebox"
                   src="images/activites/reno-laithienne.jpg"
                   alt="Vieux port"
-                />
+                >
                 <h3 class="tagactivity">Vieux port</h3>
               </article>
             </a>
@@ -350,7 +349,7 @@
                   class="stylimagebox"
                   src="images/activites/paul-hermann.jpg"
                   alt="Fort de Pomègues"
-                />
+                >
                 <h3 class="tagactivity">Fort de Pomègues</h3>
               </article>
             </a>
@@ -362,7 +361,7 @@
                   class="stylimagebox"
                   src="images/activites/kilyan-sockalingum.jpg"
                   alt="Parque National des Calanques"
-                />
+                >
                 <h3 class="tagactivity">Parque National des Calanques</h3>
               </article>
             </a>
@@ -374,10 +373,11 @@
                   class="stylimagebox"
                   src="images/activites/florian-wehde.jpg"
                   alt="Notre-Dame-de-la-Garde"
-                />
+                >
                 <h3 class="tagactivity">Notre-Dame-de-la-Garde</h3>
               </article>
             </a>
+          </div>
         </div>
       </section>
     </main>

@@ -66,11 +66,16 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-#logo {
-  width: 22%;
+#logo{
   margin-top: 13px;
   margin-left: 50px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
+
+}
+#logoimg{
+  width: 27%;
+  margin-top: 13px;
+  margin-left: 50px;
 }
 #navtab {
   list-style: none;
@@ -116,7 +121,7 @@ h1 {
   font-weight: 900;
   margin-top: 0;
   margin-bottom: 10px;
-  padding-top: 95px;
+  padding-top: 105px;
 }
 #subtitle {
   color: #292828;
@@ -131,14 +136,12 @@ h1 {
 /***mise en forme de la barre de recherche***/
 #searchbar {
   height: auto;
+  border: solid 0 ;
 }
 #locationsearch {
   margin: 20px 0;
   padding: 17px 0 17px 27px;
-  border-top: 0.5px solid var(--main-bg-color);
-  border-bottom: 0.5px solid var(--main-bg-color);
-  border-left: 0;
-  border-right: 0;
+  border: solid 1px var(--main-bg-color); 
   transition-delay: 250ms;
 }
 #locationsearch:hover {
@@ -148,13 +151,15 @@ h1 {
 }
 #locationicon {
   flex: 1.5;
-  padding: 16px 18px 18px 20px;
+  padding: 14px 18px 18px 20px;
   border-radius: 15px 0 0 15px;
   background-color: var(--main-bg-color);
   font-size: 20px;
+  border: solid 0 ;
 }
 form input {
   outline: none;
+  border: none;
 }
 form input::placeholder {
   padding-right: 0;
@@ -163,6 +168,9 @@ form input::placeholder {
   font-weight: 800;
   color: #000000;
   opacity: 1;
+  border: solid 0 ;
+
+  
 }
 form input:focus {
   border-top: solid 2px var(--main-color);
@@ -962,7 +970,9 @@ a {
     justify-content: center;
   }
   .tabs {
-    padding-left: 0;
+   margin-right: 0;
+   margin-left: 0;
+
   }
 
   /***Recherche et filtres***/

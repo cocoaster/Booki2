@@ -61,7 +61,7 @@ header {
   left: 0;
   overflow: hidden;
 }
-nav{
+nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -127,8 +127,6 @@ h1 {
   display: flex;
   align-items: center;
 }
-
-
 
 /***mise en forme de la barre de recherche***/
 #searchbar {
@@ -356,7 +354,7 @@ h3 {
   font-size: 15.5px;
   color: #000000;
 }
-.leftrentag{
+.leftrentag {
   margin-left: 10px;
 }
 .leftfontcard {
@@ -563,7 +561,7 @@ footer {
 a {
   color: #000000;
 }
-.footer-item{
+.footer-item {
   padding-bottom: 15px;
   font-size: 14px;
 }
@@ -615,7 +613,7 @@ a {
   .leftfontcard {
     font-size: 13px;
   }
-   /***Panneau Les plus populaires ***/
+  /***Panneau Les plus populaires ***/
   .rightrentag {
     font-size: 13px;
   }
@@ -689,20 +687,20 @@ a {
   #activitiessection {
     height: auto;
   }
-  .boxcard{
+  .boxcard {
     height: 311px;
   }
   #activityheading {
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
   }
 
   #parentboxactivities {
     height: 260px;
     margin-top: 70px;
   }
- .childboxactivities {
-  margin-top: 160px; 
-}
+  .childboxactivities {
+    margin-top: 160px;
+  }
   .childboxactivities .linkbox .boxcard {
     height: 260px;
   }
@@ -716,7 +714,6 @@ a {
 
 /*** tablettes SUITE ***/
 @media screen and (max-width: 992px) {
-
   .main-container {
     padding: 0;
   }
@@ -905,8 +902,6 @@ a {
 
 /**********pour les téléphones mobiles*********/
 @media screen and (max-width: 767.98px) {
- 
-
   html,
   body {
     max-width: 100%;
@@ -915,8 +910,8 @@ a {
     padding: 0;
   }
 
- /***Menu***/
-   header {
+  /***Menu***/
+  header {
     flex-direction: column;
     justify-content: center;
     padding: 0;
@@ -924,7 +919,7 @@ a {
     width: auto;
     text-align: center;
   }
-  nav{
+  nav {
     flex-direction: column;
   }
   h1 {
@@ -1149,7 +1144,7 @@ a {
     border-radius: 18px;
     box-shadow: 1px 1px 12px 3px #f9fbfe;
   }
- 
+
   .rightstylimage {
     margin-bottom: 4px;
     margin-top: 4px;
@@ -1158,10 +1153,6 @@ a {
     height: 142px;
     width: 34%;
   }
-  
-
- 
-
 
   /***Panneau de gauche Les hébergements***/
   #rentsection {
@@ -1205,7 +1196,6 @@ a {
   .leftstars {
     padding: 5px;
     font-size: 12px;
-   
   }
   #display {
     margin: 40px 0 0 0;
@@ -1285,7 +1275,7 @@ a {
     padding-bottom: 0;
     padding-left: 10px;
   }
-  .footer-item{
+  .footer-item {
     font-size: 17px;
     margin-bottom: auto;
   }

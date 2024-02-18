@@ -47,7 +47,6 @@ a {
 /***Onglets en haut à droite***/
 header {
   max-width: 1440px;
-
   width: 100%;
   min-width: 330px;
   display: flex;
@@ -57,14 +56,18 @@ header {
   background-color: #ffffff;
   margin: 0 auto;
   padding-right: 80px;
-
   top: 0;
   right: 0;
   left: 0;
   overflow: hidden;
 }
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 #logo {
-  width: 28%;
+  width: 22%;
   margin-top: 13px;
   margin-left: 50px;
   margin-bottom: 0;
@@ -80,21 +83,22 @@ header {
   justify-content: flex-end;
   list-style-type: none;
   margin-top: 0;
-  padding-top: 30px;
+  padding-top: 15px;
   margin-right: 0;
 }
 .tabs {
   font-size: 14px;
   color: #000000;
-  padding: 30px 40px 0 40px;
-  margin-right: 0;
+  padding: 15px 5px 0 5px;
+  margin-right: 20px;
+  margin-left: 35px;
   transition-delay: 250ms;
 }
 
 .tabs:hover,
 .tabs:active,
 .tabs:focus {
-  border-top: 5px solid var(--main-color);
+  border-top: 3px solid var(--main-color);
   color: var(--main-color);
 }
 
@@ -112,11 +116,11 @@ main {
   align-items: center;
 }
 h1 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 900;
   margin-top: 0;
   margin-bottom: 10px;
-  padding-top: 135px;
+  padding-top: 95px;
 }
 #subtitle {
   color: #292828;
@@ -155,7 +159,7 @@ form input {
 form input::placeholder {
   padding-right: 0;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 800;
   color: #000000;
   opacity: 1;
@@ -171,7 +175,7 @@ input:focus::placeholder {
 }
 #searchtext {
   padding: 13px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 800;
   text-decoration: none;
   color: #ffffff;
@@ -195,7 +199,7 @@ form {
 #filters {
   display: flex;
   align-items: center;
-  margin-left: 6px;
+  margin-left: 0;
 }
 #filterstitle {
   font-size: 17px;
@@ -206,16 +210,16 @@ form {
   display: flex;
   align-items: center;
 }
-.container {
+.filter-container {
   width: auto;
-  margin-left: 25px;
+  margin-left: 13px;
   position: relative;
-  padding: 10px 20px 10px 57px;
+  padding: 10px 20px 10px 47px;
   border: 3px solid #dedcdc;
   border-radius: 50px;
   transition-delay: 250ms;
 }
-.container:hover {
+.filter-container:hover {
   box-shadow: -0.4px 0.5px 3px 3px #e8effa;
   background-color: var(--filter-bg-color);
   border: 3px solid #dedcdc;
@@ -223,7 +227,7 @@ form {
 .icons {
   color: var(--main-color);
   position: absolute;
-  left: 20px;
+  left: 17px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -240,8 +244,9 @@ form {
 .size4 {
   font-size: 17px;
 }
-.boldfont {
-  font-size: 18px;
+.filter-name {
+  font-weight: bold;
+  font-size: 16px;
   font-weight: 900;
 }
 
@@ -278,11 +283,21 @@ form {
 
 /***Hébergements et populaires***/
 
+
 .hebergements-and-populaires {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
-
+#marker1 {
+  display: inline-block;
+  position: absolute;
+  top: 135px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 1;
+}
 .hebergements-and-populaires section {
   background-color: var(--main-bg-color);
   border-radius: 20px;
@@ -337,9 +352,12 @@ h2 {
 h3 {
   margin-top: 5px;
   margin-bottom: 0;
-  margin-left: 10px;
-  font-size: 18px;
+  margin-left: 0;
+  font-size: 15.5px;
   color: #000000;
+}
+.leftrentag{
+  margin-left: 10px;
 }
 .leftfontcard {
   margin: 5px 0 5px 0;
@@ -446,10 +464,10 @@ h3 {
   position: relative;
   display: inline-block;
 }
-#marker {
+#marker2 {
   display: inline-block;
   position: absolute;
-  top: -90px;
+  top: -80px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -480,7 +498,7 @@ h3 {
 
 /***box***/
 .childboxactivities {
-  width: 23%;
+  width: 23.2%;
   height: 445px;
   display: flex;
   flex-direction: column;
@@ -537,7 +555,7 @@ footer {
   padding-top: 0;
 }
 .footerfont {
-  font-size: 15px;
+  font-size: 20px;
 
   font-weight: bolder;
   color: #000000;
@@ -553,7 +571,7 @@ footer {
 a {
   color: #000000;
 }
-.footerli {
+.footer-item{
   padding-bottom: 15px;
   font-size: 14px;
 }
@@ -592,7 +610,7 @@ a {
     transform: translate(-50%, -50%);
     position: absolute;
   }
-  .boldfont {
+  .filter-name {
     font-size: 15px;
     font-weight: 900;
   }
@@ -732,7 +750,7 @@ a {
   #filterstitle {
     font-size: 18px;
   }
-  .container {
+  .filter-container {
     margin-left: 25px;
     position: relative;
     padding: 5px 13px 5px 40px;
@@ -751,7 +769,7 @@ a {
     font-size: 8px;
   }
 
-  .boldfont {
+  .filter-name {
     font-size: 13px;
   }
   /***hébergements et populaires***/
@@ -906,6 +924,9 @@ a {
     width: auto;
     text-align: center;
   }
+  nav{
+    flex-direction: column;
+  }
   h1 {
     font-size: 20px;
     margin-left: auto;
@@ -942,7 +963,7 @@ a {
     border-bottom-color: var(--main-color);
   }
 
-  #li2 {
+  #item-menu2 {
     justify-content: center;
   }
   .tabs {
@@ -1034,7 +1055,7 @@ a {
     flex-direction: column;
     margin: auto;
   }
-  .container {
+  .filter-container {
     margin: 0 0 15px 20px;
     padding: 15px 10px 15px 50px;
     width: 70%;
@@ -1054,7 +1075,7 @@ a {
   .size4 {
     font-size: 12px;
   }
-  .boldfont {
+  .filter-name {
     padding-right: 10px;
     padding-left: 10px;
     font-size: 14px;
@@ -1234,7 +1255,7 @@ a {
     overflow: hidden;
     margin: auto;
   }
-  #marker {
+  #marker2 {
     top: -180px;
   }
   #activityheading {
@@ -1275,55 +1296,6 @@ a {
     width: 100%;
     height: 156px;
   }
-  /***box 2***/
-  /***image haut***/
-  #linkbox2top {
-    width: auto;
-    height: auto;
-    margin-bottom: 5px;
-  }
-  .box2cardtop {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    height: 210px;
-    margin-bottom: 20px;
-  }
-  .stylebox2topimage {
-    width: 100%;
-    height: 156px;
-  }
-  /***image bas***/
-  #linkbox2bottom {
-    height: auto;
-    margin-bottom: 5px;
-  }
-  .box2cardbottom {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    margin-bottom: 0;
-    height: 210px;
-  }
-  .stylebox2bottomimage {
-    width: 100%;
-    height: 156px;
-  }
-  /***box4***/
-  .linkbox4 {
-    height: auto;
-    margin-bottom: 5px;
-  }
-  .box4card {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    margin-bottom: 20px;
-    height: 210px;
-  }
-  .stylimagebox4 {
-    height: 156px;
-  }
   .tagactivity {
     font-size: 17px;
   }
@@ -1352,7 +1324,7 @@ a {
     padding-bottom: 0;
     padding-left: 10px;
   }
-  .footerli {
+  .footer-item{
     font-size: 17px;
     margin-bottom: auto;
   }

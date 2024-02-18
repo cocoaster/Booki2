@@ -28,7 +28,8 @@
 
     <!-- Menu en haut à droite-->
     <header>
-      <nav id="logo">
+      <nav >
+      <div id="logo">
         <a id="logolink" href="#">
           <img id="logo"
             src="images/logo/Booki.png"
@@ -36,15 +37,17 @@
             alt="Logo Booki"
           />
         </a>
-      </nav>
-      <nav id="navtab">
+      </div>
+      <div id="navtab">
         <ul id="tablist">
-          <li id="li1">
-            <a class="tabs" href="#searchandfiltersection">Hébergements</a>
+          <li id="item-menu1">
+            <a class="tabs" href="#marker1">Hébergements</a>
           </li>
-          <li id="li2"><a class="tabs" href="#marker">Activités</a></li>
+          <li id="item-menu2">
+            <a class="tabs" href="#marker2">Activités</a></li>
         </ul>
-      </nav>
+      </div>
+    </nav>
     </header>
     <main>
       <!-- Recherche et Filtres-->
@@ -61,9 +64,9 @@
           <input
             id="locationsearch"
             type="text"
-            style="color: #000000"
             name="locationsearch"
             placeholder="Marseille, France"
+            disabled
           />
           <button id="searchtext">Rechercher</button>
           <div id="buttoncontainer">
@@ -76,29 +79,29 @@
         <div id="filters">
           <h2 id="filterstitle">Filtres</h2>
           <div id="choices">
-            <div class="container">
+            <div class="filter-container">
               <a href="#" class="icons">
                 <span class="fas fa-money-bill-wave fa-lg size1"></span>
               </a>
-              <strong class="boldfont">Économique </strong>
+              <p class="filter-name">Économique </p>
             </div>
-            <div class="container">
+            <div class="filter-container">
               <a href="#" class="icons">
                 <span class="fa-solid fa-child fa-lg size2"></span>
               </a>
-              <strong class="boldfont">Familial</strong>
+              <p class="filter-name">Familial</p>
             </div>
-            <div class="container">
+            <div class="filter-container">
               <a href="#" class="icons">
                 <span class="fas fa-heart fa-lg size3"></span>
               </a>
-              <strong class="boldfont">Romantique</strong>
+              <p class="filter-name">Romantique</p>
             </div>
-            <div class="container">
+            <div class="filter-container">
               <a href="#" class="icons">
                 <span class="fas fa-fire fa-lg size4"></span>
               </a>
-              <strong class="boldfont">Nos pépites</strong>
+              <p class="filter-name">Nos pépites</p>
             </div>
           </div>
         </div>
@@ -106,6 +109,7 @@
 
       <!--Les Hébergements-->
       <section id="rentsection">
+        <span id="marker1"></span>
         <!--info -->
         <div id="info">
           <div id="circle">
@@ -125,7 +129,7 @@
             <!--1ere ligne-->
             <div class="lign">
               <a class="leftlinkcard" href="#">
-                <div class="leftcard card-hover">
+                <article class="leftcard card-hover">
                   <img
                     class="leftstylimage"
                     src="images/hebergements/fred-kleber.jpg"
@@ -142,10 +146,10 @@
                     <span class="fas fa-star leftbluestars"></span>
                     <span class="fas fa-star leftbluestars"></span>
                   </div>
-                </div>
+                </article>
               </a>
               <a class="leftlinkcard" href="#">
-                <div class="leftcard card-hover">
+                <article class="leftcard card-hover">
                   <img
                     class="leftstylimage"
                     src="images/hebergements/febrian-zakaria.jpg"
@@ -162,10 +166,10 @@
                     <span class="fas fa-star leftbluestars"></span>
                     <span class="fas fa-star leftbluestars"></span>
                   </div>
-                </div>
+                </article>
               </a>
               <a class="leftlinkcard" href="#">
-                <div class="leftcard card-hover">
+                <article class="leftcard card-hover">
                   <img
                     class="leftstylimage"
                     src="images/hebergements/reisetopia.jpg"
@@ -182,13 +186,13 @@
                     <span class="fas fa-star leftbluestars"></span>
                     <span class="fas fa-star leftgraystars"></span>
                   </div>
-                </div>
+                </article>
               </a>
             </div>
             <!--2eme ligne-->
             <div class="lign">
               <a class="leftlinkcard" href="#">
-                <div class="leftcard card-hover">
+                <article class="leftcard card-hover">
                   <img
                     class="leftstylimage"
                     src="images/hebergements/annie-spratt.jpg"
@@ -205,10 +209,10 @@
                     <span class="fas fa-star leftbluestars"></span>
                     <span class="fas fa-star leftgraystars"></span>
                   </div>
-                </div>
+                </article>
               </a>
               <a class="leftlinkcard" href="#">
-                <div class="leftcard card-hover">
+                <article class="leftcard card-hover">
                   <img
                     class="leftstylimage"
                     src="images/hebergements/marcus-loke.jpg"
@@ -225,10 +229,10 @@
                     <span class="fas fa-star leftbluestars"> </span>
                     <span class="fas fa-star leftgraystars"></span>
                   </div>
-                </div>
+                </article>
               </a>
               <a class="leftlinkcard" href="#">
-                <div class="leftcard card-hover">
+                <article class="leftcard card-hover">
                   <img
                     class="leftstylimage"
                     src="images/hebergements/nicate-lee.jpg"
@@ -245,7 +249,7 @@
                     <span class="fas fa-star leftbluestars"></span>
                     <span class="fas fa-star leftgraystars"></span>
                   </div>
-                </div>
+                </article>
               </a>
             </div>
             <a id="linkdisplay" href="#">
@@ -324,56 +328,55 @@
 
       <!--Les Activités-à Marseille-->
       <section id="activitiesection">
-        <span id="marker"></span>
+        <span id="marker2"></span>
         <h2 id="activityheading">Activités à Marseille</h2>
         <div id="parentboxactivities">
           <div class="childboxactivities">
             <a class="linkbox card-hover" href="#">
-              <div class="boxcard">
+              <article class="boxcard">
                 <img
                   class="stylimagebox"
                   src="images/activites/reno-laithienne.jpg"
                   alt="Vieux port"
                 />
                 <h3 class="tagactivity">Vieux port</h3>
-              </div>
+              </article>
             </a>
           </div>
           <div class="childboxactivities">
             <a class="linkbox card-hover" href="#">
-              <div class="boxcard">
+              <article class="boxcard">
                 <img
                   class="stylimagebox"
                   src="images/activites/paul-hermann.jpg"
                   alt="Fort de Pomègues"
                 />
                 <h3 class="tagactivity">Fort de Pomègues</h3>
-              </div>
+              </article>
             </a>
-            <a id="linkbox2bottom" href="#"> </a>
           </div>
           <div class="childboxactivities">
             <a class="linkbox card-hover" href="#">
-              <div class="boxcard">
+              <article class="boxcard">
                 <img
                   class="stylimagebox"
                   src="images/activites/kilyan-sockalingum.jpg"
                   alt="Parque National des Calanques"
                 />
                 <h3 class="tagactivity">Parque National des Calanques</h3>
-              </div>
+              </article>
             </a>
           </div>
           <div class="childboxactivities">
             <a class="linkbox card-hover" href="#">
-              <div class="boxcard">
+              <article class="boxcard">
                 <img
                   class="stylimagebox"
                   src="images/activites/florian-wehde.jpg"
                   alt="Notre-Dame-de-la-Garde"
                 />
                 <h3 class="tagactivity">Notre-Dame-de-la-Garde</h3>
-              </div>
+              </article>
             </a>
         </div>
       </section>
@@ -384,13 +387,13 @@
         <div class="footerbox">
           <h2 class="footerfont">À propos</h2>
           <ul class="footerlist">
-            <li class="footerli">
+            <li class="footer-item">
               <a class="functioning" href="#">Fonctionnement du site</a>
             </li>
-            <li class="footerli">
+            <li class="footer-item">
               <a class="cgv" href="#">Conditions générales </a>
             </li>
-            <li class="footerli">
+            <li class="footer-item">
               <a class="datas" href="#">Données et confidentialité</a>
             </li>
           </ul>
@@ -398,10 +401,10 @@
         <div class="footerbox">
           <h2 class="footerfont">Nos hébergements</h2>
           <ul class="footerlist">
-            <li class="footerli">
+            <li class="footer-item">
               <a class="chart" href="#">Charte qualité</a>
             </li>
-            <li class="footerli">
+            <li class="footer-item">
               <a class="submit" href="#">Proposer votre hôtel</a>
             </li>
           </ul>
@@ -409,8 +412,8 @@
         <div class="footerbox">
           <h2 class="footerfont">Assistance</h2>
           <ul class="footerlist">
-            <li class="footerli"><a class="help" href="#">Centre d'aide</a></li>
-            <li class="footerli">
+            <li class="footer-item"><a class="help" href="#">Centre d'aide</a></li>
+            <li class="footer-item">
               <a class="contact" href="#">Nous contacter</a>
             </li>
           </ul>

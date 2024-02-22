@@ -627,9 +627,9 @@ a {
 }
 
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+/* Medium devices (tablets, less/equal than 1065px) */
 
-@media (max-width: 1024px) {
+@media (max-width: 1065px) {
   /***Les Filtres***/
   .size1 {
     font-size: 10px;
